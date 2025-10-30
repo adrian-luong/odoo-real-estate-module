@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="res_users_view_form" model="ir.ui.view">
+        <field name="name">Estate Salesmen</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <!-- find field description and add the field new_field after it -->
+            <xpath expr="//field[@name='lang']" position="after">
+                <field name="property_ids"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="estate_dashboard_action" model="ir.actions.act_window">
+        <field name="name">Estate Dashboard</field>
+        <field name="res_model">estate.dashboard</field>
+        <field name="view_mode">qweb</field>
+    </record>
+
+    <record id="estate_dashboard_view" model="ir.ui.view">
+        <field name="name">Estate Dashboard</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <templates xml:space="preserve">
+                <t t-name="estate.Root">
+                    <field name="name" />
+                </t>
+            </templates>
+        </field>
+    </record>
+</odoo>
